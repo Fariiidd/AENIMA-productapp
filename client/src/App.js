@@ -1,9 +1,22 @@
-function App() {
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+// COMPONENTS
+import Navbar from './components/Navbar/Navbar'
+
+// STYLES
+import GlobalStyles from './globalStyles'
+
+const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  );
+    <>
+      <BrowserRouter>
+      <GlobalStyles />
+      <Navbar />
+      
+      </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+export default App
