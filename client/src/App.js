@@ -7,6 +7,7 @@ import Home from './components/Pages/Home/Home';
 
 // STYLES
 import GlobalStyles from './globalStyles'
+import { Color } from './style';
 
 const App = () => {
   return (
@@ -14,10 +15,11 @@ const App = () => {
       <BrowserRouter>
         <GlobalStyles />
         <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-        </Routes>
-
+        <Color>
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </Color>
       </BrowserRouter>
     </>
   )
