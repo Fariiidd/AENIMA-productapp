@@ -12,9 +12,9 @@ export const getProducts = async (req, res) => {
 }
 
 export const createProduct = async (req, res) => {
-    const { name, description, image } = req.body;
+    const { name, description, image, price } = req.body;
 
-    const newProduct = new Product({ name, description, image });
+    const newProduct = new Product({ name, description, image, price });
     try {
         await newProduct.save();
 
@@ -38,9 +38,9 @@ export const getOneProduct = async (req, res) => {
 
 export const updateProduct = async (req, res) => {
     const { id } = req.params;
-    const { name, description, image } = req.body;
+    const { name, description, image, price } = req.body;
 
-    const updateProduct = { name, description, image, _id: id }
+    const updateProduct = { name, description, image, price,_id: id }
 
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
 
