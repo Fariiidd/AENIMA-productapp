@@ -5,6 +5,7 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    align-content: flex-end;
     flex-wrap: wrap;
     max-width: 100%;
 
