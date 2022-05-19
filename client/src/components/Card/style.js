@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
 
 export const Card = styled.div`
     width: 190px;
-    height: 254px;
+    height: auto;
     padding: .8em;
     background: #f5f5f5;
     position: relative;
@@ -14,16 +14,16 @@ export const Card = styled.div`
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 `;
 
-export const Img = styled.div`
-    background-color: #ffcaa6;
-    height: 40%;
+export const Img = styled.img`
+    height: 50%;
     width: 100%;
+    position: relative;
     border-radius: .5rem;
     transition: .3s ease;
 
     &:hover {
     transform: translateY(-25%);
-    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(23, 23, 23, 1) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
    }
 `;
 
@@ -54,6 +54,7 @@ export const Title = styled.p`
 export const Description = styled.p`
     font-size: .9em;
     padding-bottom: 10px;
+    height: auto;
 `;
 
 export const Price = styled.p`
@@ -72,7 +73,7 @@ export const CardButton = styled.div`
 
     &:hover {
     border: 1px solid #ffcaa6;
-    background-color: #ffcaa6;
+    background-color: #97C4B8;
    }
 `;
    
