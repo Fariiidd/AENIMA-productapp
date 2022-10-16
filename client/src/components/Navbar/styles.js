@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Container } from '../../globalStyles';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 import AdbIcon from '@material-ui/icons/Adb';
 
@@ -20,7 +20,7 @@ export const NavContainer = styled(Container)`
     display: flex;
     justify-content: space-between;
     height: 80px;
-
+    width: 100%;
     ${Container}
 `;
 

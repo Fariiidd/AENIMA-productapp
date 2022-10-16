@@ -13,13 +13,6 @@ const Home = () => {
             <Banner {...bannerObj} />
             <Container>
                 <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
             </Container>
         </>
     )

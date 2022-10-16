@@ -5,11 +5,11 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    align-content: flex-end;
+    align-content: center;
     flex-wrap: wrap;
     max-width: 100%;
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 620px) {
         justify-content: center;
         align-items: center;
         flex-direction: column;

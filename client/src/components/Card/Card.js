@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { fetchAllProduct } from '../../reducers/Slices/Product/product';
+import React, { useEffect, useState } from 'react';
+import { fetchAllProduct, fetchOneProduct } from '../../reducers/Slices/Product/product';
 import { useDispatch, useSelector } from 'react-redux'
 
 // STYLES
@@ -8,20 +8,23 @@ import { CardContainer, Card, Img, InfoCard, Title, Description, Footer, Price, 
 const Cards = () => {
 
     const { list } = useSelector(state => state.product)
-
+    const [product, setProduct] = useState({name: "", description: "", image: "", price: ""})
     const dispatch = useDispatch();
-
-    console.log(list);
 
     useEffect(() => {
         dispatch(fetchAllProduct());
+        dispatch(fetchOneProduct());
     }, [dispatch])
+
+    const handleClick = (e) => {
+        console.log("click")
+    }
 
     return (
         <>
             {list.map((product, index) => (
-                <CardContainer id="product">
-                    <Card>
+                <CardContainer key={index}>
+                    <Card onClick={handleClick}>
                         <Img src={product.image} />
                         <InfoCard>
                             <Title>{product.name}</Title>

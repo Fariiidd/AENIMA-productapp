@@ -28,7 +28,7 @@ const Navbar = () => {
               </Links>
             </Item>
             <Item>
-              <Links to="card" smooth={true} duration={1000}>
+              <Links to="card">
                 Products
               </Links>
             </Item>

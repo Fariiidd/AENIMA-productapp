@@ -13,7 +13,7 @@ export const InfoRow = styled.div`
     align-items: center;
     flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
         flex-wrap: wrap;
     }
 `;
@@ -38,8 +38,8 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
-
-    @media screen and (max-width: 760px){
+    
+    @media screen and (max-width: 768px){
         padding-bottom: 65px;
     }
 `;
